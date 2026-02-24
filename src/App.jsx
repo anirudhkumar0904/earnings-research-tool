@@ -111,7 +111,7 @@ export default function App() {
 
     try {
       const res = await fetch(
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyAd99HFG5ofSmwLXVr5HewuYuKz20biAsU",
+        "`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${import.meta.env.VITE_GEMINI_KEY}`",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
